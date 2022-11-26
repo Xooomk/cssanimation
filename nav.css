@@ -1,0 +1,111 @@
+nav {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid 2px black;
+}
+
+nav ul{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none; 
+    padding-right: 5%;
+}
+
+nav ul li {
+    transition: 1.5s;
+}
+
+nav ul li:hover {
+    border-bottom: solid 1px black;
+
+}
+
+.titre h2{ 
+    padding-left: 3%;
+    font-size: 40px;
+}
+
+nav:hover h2 {
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes animation {
+    0% {
+        transform: translateX(0px);
+        color: lightblue;
+    }
+
+    25% {
+        transform: translateY(15px);
+        color: lightskyblue
+    }
+
+    50% {
+        transform: translateX(-15px);
+        color: coral
+    }
+
+    75% {
+        transform: translateY(-15px);
+        color: rgb(91, 91, 233);
+    }
+
+    100% {
+        transform: translateX(15px);
+        color: lightblue;
+    }
+}
+
+.icon {
+    display: block;
+    margin: 10px auto;
+    animation: 3s infinite linear tourne;
+}
+
+
+
+@keyframes tourne {
+    0%  {
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    h2 {
+       flex-direction: column;
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .icon{
+        display:none;
+    }
+}

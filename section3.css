@@ -1,0 +1,34 @@
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    
+}
+
+.img3d {
+    grid-column-start: 2;
+    grid-column-end: 3;
+;
+  }
+
+
+@media screen and (max-width: 1240px) {
+    .img3d{
+        width: 750px;
+        height: 422px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img3d{
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img3d{
+        width: 250px;
+        height: 140px;
+    }
+}

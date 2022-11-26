@@ -1,0 +1,14 @@
+@import url(nav.css);
+@import url(pres.css);
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(boutons.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
